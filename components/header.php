@@ -1,5 +1,6 @@
 <?php
 session_start();
+
 ?>
 
 <header>
@@ -15,7 +16,10 @@ session_start();
 				</li>
 				<?php if ($_SESSION['user']): ?>
 				<li>
-					<a class="menu-link" href="?dir=pages&file=createDb">Create</a>
+					<a class="menu-link" href="?dir=pages&file=createDb">Create database</a>
+				</li>
+				<li>
+					<a class="menu-link" href="?dir=pages&file=createTable">Create table</a>
 				</li>
 				<?php
 endif ?>

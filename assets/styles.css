@@ -1,13 +1,13 @@
 @keyframes BodyAnimation {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 * {
@@ -19,7 +19,7 @@
 h1 {
   font-weight: 400;
   margin: 1rem;
-	color: #1e5a80;
+  color: #1e5a80;
 }
 
 h2,
@@ -49,9 +49,9 @@ p {
   margin: 2.5rem;
 }
 
-button{
-	font-size: 1rem;
-	font-weight: 400;
+button {
+  font-size: 1rem;
+  font-weight: 400;
 }
 
 header {
@@ -59,7 +59,14 @@ header {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  background-color: #f5f5f5;
+  background: linear-gradient(
+    to right,
+    #f5f5f5,
+    #f5f5f5,
+    #f5f5f5,
+    #f5f5f5,
+    #6f97ce
+  );
   height: 4.5rem;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
@@ -91,7 +98,7 @@ header .menu ul {
   margin: 0 0.7rem;
   text-decoration: none;
   font-weight: 500;
-  font-size: 1.4rem;
+  font-size: 1.1rem;
   color: #14384a;
   transition: all 300ms cubic-bezier(0.39, 0.575, 0.565, 1);
 }
@@ -109,20 +116,20 @@ header .menu ul {
   color: #ffffff;
   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px;
   border: none;
-	transition: all 200ms ease-in-out;
-	cursor: pointer;
+  transition: all 200ms ease-in-out;
+  cursor: pointer;
 }
 
 .btn-blue {
   background: linear-gradient(to left, #4385ae, #1e5f88);
 }
 
-.btn-red{
-	background: linear-gradient(to left, #cb5454, #ac2626);
+.btn-red {
+  background: linear-gradient(to left, #cb5454, #ac2626);
 }
 
-.btn-green{
-	background: linear-gradient(to left, #54cb7a, #26ac59);
+.btn-green {
+  background: linear-gradient(to left, #54cb7a, #26ac59);
 }
 
 .btn:hover {
@@ -131,9 +138,9 @@ header .menu ul {
 }
 
 header .auth {
-	display: flex;
-	flex-direction: row;
-	align-items: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   margin: 0 3rem;
 }
 
@@ -147,13 +154,13 @@ header .auth {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-	background: linear-gradient(#ffffff,#d1d1d1);
-	animation: BodyAnimation 26s ease infinite;
-	background-size: 500% 500%;
+  background: linear-gradient(#ffffff, #d1d1d1);
+  animation: BodyAnimation 26s ease infinite;
+  background-size: 500% 500%;
 }
 
 .login-container {
-	background-color: rgba(255, 255, 255, 0.704);
+  background-color: rgba(255, 255, 255, 0.704);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -173,8 +180,31 @@ header .auth {
   margin: 1rem;
 }
 
-.login-container form .button-area{
-	display: flex;
-	flex-direction: row;
-	align-items: center;
+.login-container form .button-area {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.card {
+  padding: 1rem;
+  border: 1px solid #dcdcdc;
+  background-color: #efefefa6;
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  font-size: 1.2rem;
+  color: #555;
+  font-weight: 400;
+}
+
+.card-red {
+  border: 1px solid #ff8484;
+  background-color: #ff4a4aa6;
+  color: #fff;
+}
+
+.card-green {
+  border: 1px solid #5bca6da6;
+  background-color: #33b048a6;
+  color: #fff;
 }
