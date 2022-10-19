@@ -59,14 +59,15 @@ header {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  background: linear-gradient(
+  /* background: linear-gradient(
     to right,
     #f5f5f5,
     #f5f5f5,
     #f5f5f5,
     #f5f5f5,
     #6f97ce
-  );
+  ); */
+	background-color:  #f5f5f5;
   height: 4.5rem;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
@@ -114,14 +115,14 @@ header .menu ul {
   text-decoration: none;
   font-weight: 400;
   color: #ffffff;
-  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px;
+	box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
   border: none;
   transition: all 200ms ease-in-out;
   cursor: pointer;
 }
 
 .btn-blue {
-  background: linear-gradient(to left, #4385ae, #1e5f88);
+  background: linear-gradient(to left, #6f97ce, #185275);
 }
 
 .btn-red {

@@ -1,5 +1,9 @@
 <?php
 
+if(!isset($_SESSION['user'])){
+	header('location: index.php?dir=pages&file=home');
+}
+
 require_once "db/connection.php";
 $db_name = $_POST['dbName'];
 

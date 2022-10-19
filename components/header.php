@@ -14,12 +14,18 @@ session_start();
 				<li>
 					<a class="menu-link" href="?dir=pages&file=contact">Contact</a>
 				</li>
-				<?php if ($_SESSION['user']): ?>
+				<?php if (isset($_SESSION['user'])): ?>
 				<li>
 					<a class="menu-link" href="?dir=pages&file=createDb">Create database</a>
 				</li>
 				<li>
 					<a class="menu-link" href="?dir=pages&file=createTable">Create table</a>
+				</li>
+				<li>
+					<a class="menu-link" href="?dir=pages&file=insertItem">Insert item</a>
+				</li>
+				<li>
+					<a class="menu-link" href="?dir=pages&file=readTable">Read Table</a>
 				</li>
 				<?php
 endif ?>

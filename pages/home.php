@@ -1,6 +1,6 @@
 <?php
-$_SESSION['success'] = null;
-$_SESSION['erros'] = null;
+unset($_SESSION['success']);
+unset($_SESSION['error']);
 ?>
 
 <div class="content">
